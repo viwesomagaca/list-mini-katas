@@ -1,3 +1,8 @@
 module.exports = function(list){
-    return [];
+
+    var first = list[0];
+
+    list[0] = list[1];
+    list[1] =first;
+    return list;
 }
